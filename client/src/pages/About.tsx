@@ -65,14 +65,16 @@ export default function About() {
         </div>
       </section>
 
-      {/* About Image */}
+      {/* Erynn's Photo */}
       <section className="py-8">
-        <div className="container">
-          <img
-            src={aboutImage}
-            alt="Abstract warm illustration suggesting thoughtful conversation"
-            className="w-full max-w-[800px] mx-auto rounded-lg"
-          />
+        <div className="container content-narrow">
+          <div className="flex justify-center">
+            <img
+              src="/manus-storage/erynn-kirshner-headshot_b4910dd2.png"
+              alt="Erynn Kirshner, Founder of Tech Love Consulting"
+              className="w-64 h-80 rounded-lg object-cover object-top shadow-lg"
+            />
+          </div>
         </div>
       </section>
 

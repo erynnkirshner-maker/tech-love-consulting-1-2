@@ -176,17 +176,26 @@ export default function Home() {
       {/* Authority Block */}
       <section className="section-spacing">
         <div className="container content-narrow">
-          <h2 className="mb-6">You need someone who has actually run a business.</h2>
-          <p>
-            Erynn Kirshner founded Tech Love Consulting after 20 years in operational leadership, including COO roles and enterprise SaaS leadership at companies like PAR Technology. She holds UC Berkeley Haas certification in AI Business Strategy and Applications.
-          </p>
-          <div className="conversation-marker">
-            She built TLC on one belief: the best AI strategy is the one your team will actually use.
-          </div>
-          <div className="mt-8">
-            <Link href="/about" className="text-teal font-semibold no-underline hover:text-plum">
-              Read more about Erynn &rarr;
-            </Link>
+          <div className="flex flex-col md:flex-row items-start gap-8">
+            <img
+              src="/manus-storage/erynn-kirshner-headshot_b4910dd2.png"
+              alt="Erynn Kirshner, Founder of Tech Love Consulting"
+              className="w-48 h-48 rounded-lg object-cover object-top shrink-0 shadow-md"
+            />
+            <div>
+              <h2 className="mb-6">You need someone who has actually run a business.</h2>
+              <p>
+                Erynn Kirshner founded Tech Love Consulting after 20 years in operational leadership, including COO roles and enterprise SaaS leadership at companies like PAR Technology. She holds UC Berkeley Haas certification in AI Business Strategy and Applications.
+              </p>
+              <div className="conversation-marker">
+                She built TLC on one belief: the best AI strategy is the one your team will actually use.
+              </div>
+              <div className="mt-8">
+                <Link href="/about" className="text-teal font-semibold no-underline hover:text-plum">
+                  Read more about Erynn &rarr;
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
