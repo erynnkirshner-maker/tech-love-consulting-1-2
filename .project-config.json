@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN",
+    "access_key_id": "ASIAZV3A2ECZEOEYNDIA",
+    "secret_access_key": "/LX2r/UTr+yJ5jK0NEmzC9b3K/m8xBJCTgyThNmj",
+    "session_token": "IQoJb3JpZ2luX2VjEP///////////wEaCXVzLWVhc3QtMSJGMEQCIHIeMBoSIUmHFfIgKlm5Yo1Me9NFg89PYtgx20UckCjLAiBAM7gad8WAB4oOlD1FQTYeheXh+y8rgDOyXlFOPCg2xSr/AwjH//////////8BEAQaDDY2NTM4NjA5ODg2NiIMonLRfEz4sgZiOLVpKtMDt/SsdD4I6NWyFEWmQw+cw51uxdAOj2C3feU5dkcYoA8CS/V5mHk3PE72sTQfQXwEdCPAP0RjxquCkHNmvBx7pjBhOvtab6kN50EMG92FsbuRSFvknkd3i4KptN/pkxnpoR37XGSFT5B4YO82TW9uNHUcTasgwQulVRoHbzNxnnYnNISs8t880jnoG4SWYIuXd20urut0nH/MkW3PkkYCGBfqwytxD6DXWFC3aU7K6cuozf0NVBn4r+PTYTYW3AwRFKW4iW4TIEcwsr2zRorfDu+aEwHhOIKwDfuEhlVFf4Dk1P2s4GNks0gqiuF/G1mmvG+9OK8QgZ1mgsCmEq6wjkumK3sawYIbPoAMukytVyziP5RsOvY5nDWz7WeasuHbuf33RxQbRT6rfFf+fPZDOwBZvI9ItLExKKRawsgfrakahPCmAyyojL9VZ4fHLEanriuHX3/7YXJuZWDjejo9AVZXP0jS+qnP+p5r4/UsczW0jLD1nGoDub3mjSxTMjhyw18ioWCkp6RyB9Ue0n+VFE+mV3kIdpho2ZGCcb0ZNMCmRPz1pFvTGq5oceFixlpSirxC4RCkKJN+taeg+oTYNMUr9CNwaUuUPcrZ6WQIKC359RMw5pyu0AY6ngHse8ddekHczPfGu2r//8HIUvcIMKNf2CvOxLnBkUOS7ljhSSLa+CaI/QM1H3M75lfwQGg1alPUaUPhWnp8kqib0IpM6um594OdKCEkrWfdI1Vf0oBlibgGt5x7F7+Z52YQO9hOiKxV6bEBjscaoaXSZuKGs/EXDf2EN9Ftj6XmQC3+9gGS+NVT17bTcHuTjaZyAIF0Kzf+dTuTQD74yg==",
+    "expiration": "2026-05-19T10:10:46.000Z"
+  },
+  "name": "tech-love-consulting",
+  "path": "/home/ubuntu/tech-love-consulting",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "JPpumtmoSgBgKsYXvGM9dD",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "eZseHFNtJPpR2F5gxR4DRw",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Erynn Kirshner",
+    "OWNER_OPEN_ID": "TFGnW9ahZmJpBHNNWKqYJX",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "32ee8ca1-c6ab-4b2a-8761-50221a0f36b8",
+    "VITE_APP_ID": "3KuvCeY4XyBCWKjDVw6mdN",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Tech Love Consulting",
+    "VITE_FRONTEND_FORGE_API_KEY": "hWATzRW2W5chnAdivuk6EG",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
