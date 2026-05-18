@@ -31,14 +31,14 @@ Forms are already configured with `data-netlify="true"` attributes. After deploy
 1. Go to Netlify dashboard > Forms
 2. You should see two forms: `discovery-call` and `contact`
 3. Set up email notifications: Forms > Form notifications > Add notification
-4. Route to: `erynn.kirshner@gmail.com`
+4. Route to: `Erynn.Kirshner@techloveconsulting.com`
 
 ### Decap CMS Setup
 
 1. In Netlify: Go to Site settings > Identity
 2. Enable Identity
 3. Under Registration: Set to "Invite only"
-4. Invite yourself (erynn.kirshner@gmail.com)
+4. Invite yourself (Erynn.Kirshner@techloveconsulting.com)
 5. Enable Git Gateway: Site settings > Identity > Services > Git Gateway > Enable
 6. Access the CMS at: `https://techlove.consulting/admin`
 

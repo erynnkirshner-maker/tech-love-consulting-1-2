@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import CTASection from "@/components/CTASection";
 
-const scaleImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-scale-framework-3kVG2rfuYMjBqJ6eNi4d6Q.webp";
+const scaleImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-scale-v2-4KdDWdHa3XV4gY9U2NryqN.webp";
 
 const dimensions = [
   {

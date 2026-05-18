@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
 
           <h2 className="text-xl mb-4">Your rights</h2>
           <p>
-            You can request access to, correction of, or deletion of any personal information we hold about you. To make a request, email us at erynn.kirshner@gmail.com. We will respond within 30 days.
+            You can request access to, correction of, or deletion of any personal information we hold about you. To make a request, email us at Erynn.Kirshner@techloveconsulting.com. We will respond within 30 days.
           </p>
 
           <h2 className="text-xl mb-4">Data retention</h2>
@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
           <h2 className="text-xl mb-4">Contact</h2>
           <p>
             If you have questions about this privacy policy or how we handle your information, contact Erynn Kirshner at{" "}
-            <a href="mailto:erynn.kirshner@gmail.com" className="text-teal underline">erynn.kirshner@gmail.com</a>.
+            <a href="mailto:Erynn.Kirshner@techloveconsulting.com" className="text-teal underline">Erynn.Kirshner@techloveconsulting.com</a>.
           </p>
         </div>
       </section>

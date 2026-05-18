@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import CTASection from "@/components/CTASection";
 
-const aboutImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-about-texture-bYzikzo9zTmVDdrzYFrctE.webp";
+const aboutImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-about-v2-aK8Xdt2MwZqUMKQtr3xd8q.webp";
 
 const schema = {
   "@context": "https://schema.org",

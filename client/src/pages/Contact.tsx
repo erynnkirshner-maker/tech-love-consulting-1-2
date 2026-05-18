@@ -24,8 +24,8 @@ export default function Contact() {
           <h1 className="mb-6">Get in touch.</h1>
           <p className="text-lg text-foreground/80">
             Prefer email? Reach Erynn directly at{" "}
-            <a href="mailto:erynn.kirshner@gmail.com" className="text-teal font-semibold underline">
-              erynn.kirshner@gmail.com
+            <a href="mailto:Erynn.Kirshner@techloveconsulting.com" className="text-teal font-semibold underline">
+              Erynn.Kirshner@techloveconsulting.com
             </a>.
           </p>
           <p className="text-lg text-foreground/80">

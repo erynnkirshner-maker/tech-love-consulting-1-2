@@ -50,6 +50,6 @@ collections:
         name: "contact"
         file: "content/settings/contact.json"
         fields:
-          - { label: "Email", name: "email", widget: "string", default: "erynn.kirshner@gmail.com" }
+          - { label: "Email", name: "email", widget: "string", default: "Erynn.Kirshner@techloveconsulting.com" }
           - { label: "Phone", name: "phone", widget: "string", required: false }
           - { label: "Location", name: "location", widget: "string", default: "Canton, Georgia" }

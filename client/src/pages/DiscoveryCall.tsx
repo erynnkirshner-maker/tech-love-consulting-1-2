@@ -2,7 +2,7 @@ import { useState } from "react";
 import SEO from "@/components/SEO";
 import FAQSection from "@/components/FAQSection";
 
-const discoveryImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-discovery-call-QyEdmh4UCvoXRP6UtieZVa.webp";
+const discoveryImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-discovery-v2-dg69z76rxXfM3zEDrU6ozs.webp";
 
 const schema = {
   "@context": "https://schema.org",

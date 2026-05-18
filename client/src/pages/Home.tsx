@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import CTASection from "@/components/CTASection";
 
-const heroImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-hero-home-9Lrk6ZqjPzna5FjdY42yYN.webp";
+const heroImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-hero-home-v2-nZMRDckP5bGW8qTPX4GwZu.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -18,7 +18,7 @@ const schema = {
     "TLC helps founder-led businesses with 10 to 80 employees build practical, human-centered AI strategies that improve margins and morale.",
   contactPoint: {
     "@type": "ContactPoint",
-    email: "erynn.kirshner@gmail.com",
+    email: "Erynn.Kirshner@techloveconsulting.com",
     contactType: "customer service",
   },
 };

@@ -69,7 +69,7 @@ export default function TermsOfService() {
           <h2 className="text-xl mb-4">Contact</h2>
           <p>
             Questions about these terms? Contact Erynn Kirshner at{" "}
-            <a href="mailto:erynn.kirshner@gmail.com" className="text-teal underline">erynn.kirshner@gmail.com</a>.
+            <a href="mailto:Erynn.Kirshner@techloveconsulting.com" className="text-teal underline">Erynn.Kirshner@techloveconsulting.com</a>.
           </p>
         </div>
       </section>

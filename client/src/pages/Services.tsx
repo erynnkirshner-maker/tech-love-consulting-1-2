@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import CTASection from "@/components/CTASection";
 
-const servicesImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-services-hero-SExi5yZmTHKdPuubV9dEWA.webp";
+const servicesImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-services-v2-JyQ2MW7cXWepRouk6dFN8t.webp";
 
 const services = [
   {
