@@ -1,0 +1,55 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "client/public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "select", options: ["AI Strategy", "Change Management", "Leadership", "Operations", "SCALE Framework"] }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Client Name", name: "name", widget: "string" }
+      - { label: "Client Title", name: "title", widget: "string" }
+      - { label: "Company", name: "company", widget: "string" }
+      - { label: "Quote", name: "quote", widget: "text" }
+      - { label: "Display Order", name: "order", widget: "number", default: 0 }
+
+  - name: "results"
+    label: "Client Results"
+    folder: "content/results"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Headline", name: "headline", widget: "string" }
+      - { label: "Situation", name: "situation", widget: "text" }
+      - { label: "Work Done", name: "work", widget: "text" }
+      - { label: "Outcome", name: "outcome", widget: "text" }
+      - { label: "Display Order", name: "order", widget: "number", default: 0 }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Contact Information"
+        name: "contact"
+        file: "content/settings/contact.json"
+        fields:
+          - { label: "Email", name: "email", widget: "string", default: "erynn.kirshner@gmail.com" }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
+          - { label: "Location", name: "location", widget: "string", default: "Canton, Georgia" }

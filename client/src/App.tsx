@@ -4,35 +4,56 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import Layout from "./components/Layout";
+import CookieBanner from "./components/CookieBanner";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
-
+import About from "./pages/About";
+import Services from "./pages/Services";
+import AIFitCheck from "./pages/AIFitCheck";
+import AIClaritySprint from "./pages/AIClaritySprint";
+import AIDesignActivation from "./pages/AIDesignActivation";
+import EmbeddedAIAdvisor from "./pages/EmbeddedAIAdvisor";
+import ScaleFramework from "./pages/ScaleFramework";
+import DiscoveryCall from "./pages/DiscoveryCall";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
+      <Route path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/services" component={Services} />
+      <Route path="/services/ai-fit-check" component={AIFitCheck} />
+      <Route path="/services/ai-clarity-sprint" component={AIClaritySprint} />
+      <Route path="/services/ai-design-activation-sprint" component={AIDesignActivation} />
+      <Route path="/services/embedded-ai-advisor" component={EmbeddedAIAdvisor} />
+      <Route path="/scale-framework" component={ScaleFramework} />
+      <Route path="/discovery-call" component={DiscoveryCall} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms-of-service" component={TermsOfService} />
+      <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <ScrollToTop />
+          <Layout>
+            <Router />
+          </Layout>
+          <CookieBanner />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

@@ -1,0 +1,18 @@
+# Tech Love Consulting
+> TLC helps founder-led businesses with 10 to 80 employees build practical, human-centered AI strategies that improve margins and morale.
+
+## About
+Tech Love Consulting is a boutique AI strategy consultancy founded by Erynn Kirshner, based in Canton, Georgia. TLC serves founder-led businesses through fractional Chief AI Strategy Officer engagements and structured advisory programs using the proprietary SCALE Framework.
+
+## Core Offers
+- AI Fit Check (/services/ai-fit-check): 60-minute AI strategy session. Starting at $750.
+- AI Clarity Sprint (/services/ai-clarity-sprint): Diagnostic and AI Readiness Snapshot using SCALE Framework.
+- AI Design + Activation Sprint (/services/ai-design-activation-sprint): Four-week embedded AI implementation.
+- Embedded AI Advisor (/services/embedded-ai-advisor): Ongoing fractional CAISO retainer.
+
+## Key Pages
+- Home (/): Overview and primary conversion page.
+- About (/about): Erynn Kirshner's background, credentials, and philosophy.
+- SCALE Framework (/scale-framework): TLC's proprietary AI adoption methodology.
+- Discovery Call (/discovery-call): Book a free 30 to 45 minute strategy conversation.
+- Blog (/blog): Thought leadership on human-centered AI adoption for founder-led businesses.
