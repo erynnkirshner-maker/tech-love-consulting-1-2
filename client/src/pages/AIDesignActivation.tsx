@@ -40,7 +40,7 @@ export default function AIDesignActivation() {
         <div className="container content-narrow">
           <p className="chapter-label">AI Design + Activation Sprint</p>
           <h1 className="mb-4">Design it. Build it. Make it stick.</h1>
-          <p className="text-lg text-foreground/70 mb-8">Four weeks. One priority. Real implementation. Scoped after a Discovery Call.</p>
+          <p className="text-[#7A7A74] mb-8">Four weeks. One priority. Real implementation. Scoped after a Discovery Call.</p>
           <Link href="/discovery-call" className="btn-primary no-underline">
             Book a Discovery Call
           </Link>
@@ -80,28 +80,28 @@ export default function AIDesignActivation() {
       <hr className="section-divider" />
 
       {/* What You Get */}
-      <section className="section-spacing bg-sand">
+      <section className="section-spacing">
         <div className="container content-narrow">
           <h2 className="mb-8">What you walk away with.</h2>
           <ul className="space-y-4 list-none pl-0">
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Designed workflow or process incorporating your priority AI initiative</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Full implementation support through the activation cycle</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Team adoption guidance throughout</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Documentation your team can use, build on, and hand to future hires</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Post-activation review with recommendations for what's next</span>
             </li>
           </ul>
@@ -120,9 +120,9 @@ export default function AIDesignActivation() {
             </p>
           </div>
           <div>
-            <h3 className="mb-4 text-plum">Who it's not for.</h3>
+            <h3 className="mb-4 !text-[#1A1A18]">Who it's not for.</h3>
             <p>
-              Businesses that haven't yet identified their priority. If you're not sure where to start, the <Link href="/services/ai-fit-check" className="text-teal font-semibold underline">AI Fit Check</Link> or <Link href="/services/ai-clarity-sprint" className="text-teal font-semibold underline">AI Clarity Sprint</Link> is the right first step.
+              Businesses that haven't yet identified their priority. If you're not sure where to start, the <Link href="/services/ai-fit-check" className="text-[#2A6E67] underline">AI Fit Check</Link> or <Link href="/services/ai-clarity-sprint" className="text-[#2A6E67] underline">AI Clarity Sprint</Link> is the right first step.
             </p>
           </div>
         </div>

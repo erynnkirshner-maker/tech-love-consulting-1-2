@@ -40,7 +40,7 @@ export default function EmbeddedAIAdvisor() {
         <div className="container content-narrow">
           <p className="chapter-label">Embedded AI Advisor</p>
           <h1 className="mb-4">Ongoing AI leadership without the full-time hire.</h1>
-          <p className="text-lg text-foreground/70 mb-8">Fractional Chief AI Strategy Officer. Monthly retainer. Scoped after a Discovery Call.</p>
+          <p className="text-[#7A7A74] mb-8">Fractional Chief AI Strategy Officer. Monthly retainer. Scoped after a Discovery Call.</p>
           <Link href="/discovery-call" className="btn-primary no-underline">
             Book a Discovery Call
           </Link>
@@ -80,32 +80,32 @@ export default function EmbeddedAIAdvisor() {
       <hr className="section-divider" />
 
       {/* What You Get */}
-      <section className="section-spacing bg-sand">
+      <section className="section-spacing">
         <div className="container content-narrow">
           <h2 className="mb-8">What you get.</h2>
           <ul className="space-y-4 list-none pl-0">
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Monthly strategy sessions and leadership touchpoints</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Ongoing AI initiative oversight and guidance</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Team education and adoption support as your work evolves</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Vendor and tool evaluation for new opportunities</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Ethics and governance oversight</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Priority access for time-sensitive decisions and emerging opportunities</span>
             </li>
           </ul>
@@ -124,7 +124,7 @@ export default function EmbeddedAIAdvisor() {
             </p>
           </div>
           <div>
-            <h3 className="mb-4 text-plum">Who it's not for.</h3>
+            <h3 className="mb-4 !text-[#1A1A18]">Who it's not for.</h3>
             <p>
               Businesses that haven't yet defined their AI strategy or implemented their first initiative. The Embedded AI Advisor engagement is designed to extend and sustain progress, not to initiate it.
             </p>

@@ -40,7 +40,7 @@ export default function AIClaritySprint() {
         <div className="container content-narrow">
           <p className="chapter-label">AI Clarity Sprint</p>
           <h1 className="mb-4">A clear AI roadmap built around how your business actually works.</h1>
-          <p className="text-lg text-foreground/70 mb-8">Diagnostic. AI Readiness Snapshot. Strategy. Scoped after a Discovery Call.</p>
+          <p className="text-[#7A7A74] mb-8">Diagnostic. AI Readiness Snapshot. Strategy. Scoped after a Discovery Call.</p>
           <Link href="/discovery-call" className="btn-primary no-underline">
             Book a Discovery Call
           </Link>
@@ -69,7 +69,7 @@ export default function AIClaritySprint() {
         <div className="container content-narrow">
           <h2 className="mb-6">How the Clarity Sprint works.</h2>
           <p>
-            Using the <Link href="/scale-framework" className="text-teal font-semibold underline">SCALE Framework</Link>, TLC assesses your business across five dimensions: Strategy, Culture and Change, Architecture and Intelligence, Leadership and Experience, and Ethics and Governance.
+            Using the <Link href="/scale-framework" className="text-[#2A6E67] font-sans font-700 text-[0.8125rem] uppercase tracking-[0.08em] border-b border-[#2A6E67] pb-[1px] no-underline">SCALE Framework</Link>, TLC assesses your business across five dimensions: Strategy, Culture and Change, Architecture and Intelligence, Leadership and Experience, and Ethics and Governance.
           </p>
           <p>
             The output is your AI Readiness Snapshot: a clear view of where you stand, where the gaps are, and which moves will create the most leverage in your specific business.
@@ -80,28 +80,28 @@ export default function AIClaritySprint() {
       <hr className="section-divider" />
 
       {/* What You Get */}
-      <section className="section-spacing bg-sand">
+      <section className="section-spacing">
         <div className="container content-narrow">
           <h2 className="mb-8">What you walk away with.</h2>
           <ul className="space-y-4 list-none pl-0">
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>AI Readiness Snapshot built on the SCALE Framework</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Gap analysis across all five dimensions</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Prioritized opportunity map</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Implementation roadmap with sequenced next steps</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>Executive summary ready to share with your leadership team</span>
             </li>
           </ul>
@@ -120,9 +120,9 @@ export default function AIClaritySprint() {
             </p>
           </div>
           <div>
-            <h3 className="mb-4 text-plum">Who it's not for.</h3>
+            <h3 className="mb-4 !text-[#1A1A18]">Who it's not for.</h3>
             <p>
-              Businesses that haven't yet had a strategic conversation about AI at the leadership level. If you're at the very beginning, the <Link href="/services/ai-fit-check" className="text-teal font-semibold underline">AI Fit Check</Link> is the right first step.
+              Businesses that haven't yet had a strategic conversation about AI at the leadership level. If you're at the very beginning, the <Link href="/services/ai-fit-check" className="text-[#2A6E67] underline">AI Fit Check</Link> is the right first step.
             </p>
           </div>
         </div>

@@ -40,26 +40,24 @@ export default function Services() {
       />
 
       {/* Hero */}
-      <section className="section-spacing">
-        <div className="container content-narrow">
-          <h1 className="mb-6">Find your entry point. Build from there.</h1>
-          <p className="text-lg text-foreground/80">
-            Every TLC engagement starts with a conversation. The offer ladder below is designed to meet you where you are, from a single focused session to ongoing fractional AI leadership.
-          </p>
-          <p className="text-lg text-foreground/80">
-            Most clients start with the AI Fit Check and move from there. The right path depends on what you need right now.
-          </p>
-        </div>
-      </section>
-
-      {/* Services Image */}
-      <section className="pb-8">
-        <div className="container">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <img
             src={servicesImage}
-            alt="Abstract watercolor showing stepping stones in warm progression"
-            className="w-full max-w-[800px] mx-auto rounded-lg"
+            alt=""
+            className="w-full h-full object-cover opacity-20"
           />
+        </div>
+        <div className="relative z-10 section-spacing">
+          <div className="container content-narrow">
+            <h1 className="mb-6">Find your entry point. Build from there.</h1>
+            <p>
+              Every TLC engagement starts with a conversation. The offer ladder below is designed to meet you where you are, from a single focused session to ongoing fractional AI leadership.
+            </p>
+            <p>
+              Most clients start with the AI Fit Check and move from there. The right path depends on what you need right now.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -68,18 +66,18 @@ export default function Services() {
       {/* Offer Cards */}
       <section className="section-spacing">
         <div className="container">
-          <div className="space-y-6 max-w-[760px] mx-auto">
+          <div className="space-y-6 max-w-[640px] mx-auto">
             {services.map((service, index) => (
               <Link
                 key={index}
                 href={service.href}
                 className="block no-underline group"
               >
-                <div className="bg-card border border-border rounded-lg p-8 hover:shadow-md transition-all duration-200 hover:-translate-y-0.5">
+                <div className="bg-[#ECF0EE] rounded-[4px] p-6 transition-colors duration-200">
                   <p className="chapter-label">{service.tier}</p>
-                  <h3 className="text-xl mb-3 group-hover:text-plum transition-colors">{service.title}</h3>
-                  <p className="text-foreground/70 mb-3">{service.description}</p>
-                  <span className="text-teal font-semibold text-sm group-hover:text-plum transition-colors">
+                  <h3 className="text-base mb-3 group-hover:text-[#1A1A18] transition-colors">{service.title}</h3>
+                  <p className="text-[15px] text-[#3C3C38] mb-3">{service.description}</p>
+                  <span className="font-sans font-700 text-[0.8125rem] uppercase tracking-[0.08em] text-[#2A6E67] border-b border-[#2A6E67] pb-[2px]">
                     Learn more &rarr;
                   </span>
                 </div>

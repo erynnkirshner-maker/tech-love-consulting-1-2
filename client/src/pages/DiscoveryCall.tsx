@@ -30,8 +30,6 @@ export default function DiscoveryCall() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In production with Netlify, this form will be handled by Netlify Forms
-    // For now, show success state
     setSubmitted(true);
   };
 
@@ -44,10 +42,19 @@ export default function DiscoveryCall() {
       />
 
       {/* Hero */}
-      <section className="section-spacing">
-        <div className="container content-narrow">
-          <h1 className="mb-4">Let's figure out where you are and what's possible.</h1>
-          <p className="text-lg text-foreground/70">The Discovery Call is a real conversation. Not a pitch.</p>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={discoveryImage}
+            alt=""
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="relative z-10 section-spacing">
+          <div className="container content-narrow">
+            <h1 className="mb-4">Let's figure out where you are and what's possible.</h1>
+            <p className="text-[#7A7A74]">The Discovery Call is a real conversation. Not a pitch.</p>
+          </div>
         </div>
       </section>
 
@@ -72,24 +79,24 @@ export default function DiscoveryCall() {
       <hr className="section-divider" />
 
       {/* What You Get */}
-      <section className="section-spacing bg-sand">
+      <section className="section-spacing">
         <div className="container content-narrow">
           <h2 className="mb-8">What you get.</h2>
           <ul className="space-y-4 list-none pl-0">
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>30 to 45 minutes with Erynn Kirshner</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>A candid assessment of your current AI readiness</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>A recommendation for your highest-leverage starting point</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-2 h-2 rounded-full bg-apricot mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <span>No pressure. No pitch. Just clarity.</span>
             </li>
           </ul>
@@ -111,89 +118,80 @@ export default function DiscoveryCall() {
       <hr className="section-divider" />
 
       {/* Booking Form */}
-      <section className="section-spacing bg-sand">
+      <section className="section-spacing">
         <div className="container content-narrow">
-          <div className="flex flex-col md:flex-row gap-10 items-start">
-            <div className="flex-1">
-              <h2 className="mb-4">Book Your Discovery Call</h2>
-              <p className="text-foreground/70 mb-6">
-                Fill out the form below and Erynn will reach out to schedule your call.
-              </p>
-              <img
-                src={discoveryImage}
-                alt="Warm watercolor archway suggesting an open invitation"
-                className="w-full rounded-lg hidden md:block"
-              />
-            </div>
-            <div className="flex-1 w-full">
-              {submitted ? (
-                <div className="bg-card border border-border rounded-lg p-8 text-center">
-                  <h3 className="text-xl mb-3 text-teal">Thank you!</h3>
-                  <p className="text-foreground/70 mb-0">
-                    Your request has been received. Erynn will be in touch within one business day to schedule your Discovery Call.
-                  </p>
+          <div className="max-w-[480px] mx-auto">
+            <h2 className="mb-4">Book Your Discovery Call</h2>
+            <p className="text-[#7A7A74] mb-8">
+              Fill out the form below and Erynn will reach out to schedule your call.
+            </p>
+            {submitted ? (
+              <div className="bg-[#ECF0EE] rounded-[4px] p-8 text-center">
+                <h3 className="text-base mb-3 text-[#2A6E67]">Thank you!</h3>
+                <p className="text-[#3C3C38] mb-0">
+                  Your request has been received. Erynn will be in touch within one business day to schedule your Discovery Call.
+                </p>
+              </div>
+            ) : (
+              <form
+                onSubmit={handleSubmit}
+                name="discovery-call"
+                method="POST"
+                data-netlify="true"
+                className="space-y-5"
+              >
+                <input type="hidden" name="form-name" value="discovery-call" />
+                <div>
+                  <label htmlFor="name" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors"
+                  />
                 </div>
-              ) : (
-                <form
-                  onSubmit={handleSubmit}
-                  name="discovery-call"
-                  method="POST"
-                  data-netlify="true"
-                  className="bg-card border border-border rounded-lg p-8 space-y-5"
-                >
-                  <input type="hidden" name="form-name" value="discovery-call" />
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-semibold mb-1.5">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 border border-border rounded-md bg-background text-foreground focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-semibold mb-1.5">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 border border-border rounded-md bg-background text-foreground focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="company" className="block text-sm font-semibold mb-1.5">Company</label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      className="w-full px-4 py-3 border border-border rounded-md bg-background text-foreground focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-semibold mb-1.5">Tell me briefly about your business and what prompted this call.</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 border border-border rounded-md bg-background text-foreground focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors resize-none"
-                    />
-                  </div>
-                  <button type="submit" className="btn-primary w-full">
-                    Book Your Discovery Call
-                  </button>
-                </form>
-              )}
-            </div>
+                <div>
+                  <label htmlFor="email" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="company" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Company</label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    value={formData.company}
+                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                    className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Tell me briefly about your business and what prompted this call.</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={4}
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors resize-none"
+                  />
+                </div>
+                <button type="submit" className="btn-primary w-full">
+                  Book Your Discovery Call
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </section>

@@ -37,8 +37,8 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img
             src={heroImage}
-            alt="Abstract watercolor in warm teal and cream tones representing growth and connection"
-            className="w-full h-full object-cover opacity-40"
+            alt=""
+            className="w-full h-full object-cover opacity-25"
           />
         </div>
         <div className="relative z-10 container section-spacing">
@@ -47,7 +47,7 @@ export default function Home() {
             <h1 className="mb-6">
               You know AI matters. You're not sure what to do next.
             </h1>
-            <p className="text-lg text-foreground/80 mb-8 max-w-[600px]">
+            <p className="text-[15px] leading-[1.8] text-[#3C3C38] mb-8 max-w-[600px]">
               That's a smart place to pause. Founders who rush into AI tools end up with expensive experiments and exhausted teams. TLC helps you build a strategy that actually works, for your business and your people.
             </p>
             <Link href="/discovery-call" className="btn-primary no-underline">
@@ -99,9 +99,9 @@ export default function Home() {
       <hr className="section-divider" />
 
       {/* Social Proof Strip */}
-      <section className="py-10 bg-sand">
+      <section className="py-10">
         <div className="container content-narrow text-center">
-          <p className="font-serif italic text-lg text-foreground/70 mb-0">
+          <p className="font-serif italic text-[1.19rem] text-[#1A1A18] mb-0">
             Trusted by founder-led businesses navigating AI adoption without the chaos.
           </p>
         </div>
@@ -114,59 +114,59 @@ export default function Home() {
         <div className="container">
           <div className="content-narrow mb-12">
             <h2 className="mb-3">Find your entry point.</h2>
-            <p className="text-lg text-foreground/70">Every engagement starts with a conversation. Here's where most clients begin.</p>
+            <p className="text-[15px] text-[#7A7A74]">Every engagement starts with a conversation. Here's where most clients begin.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[960px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[700px] mx-auto">
             {/* AI Fit Check Card */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-md transition-shadow duration-200">
-              <h3 className="text-xl mb-3">AI Fit Check</h3>
-              <p className="text-foreground/70 mb-4">
+            <div className="bg-[#ECF0EE] p-6 rounded-[4px]">
+              <h3 className="text-base mb-3">AI Fit Check</h3>
+              <p className="text-[15px] text-[#3C3C38] mb-4">
                 A 60-minute session that surfaces your highest-leverage AI opportunity and gives you a clear next step. Starting at $750.
               </p>
-              <Link href="/services/ai-fit-check" className="text-teal font-semibold text-sm no-underline hover:text-plum">
+              <Link href="/services/ai-fit-check" className="btn-secondary no-underline">
                 Learn more &rarr;
               </Link>
             </div>
 
             {/* AI Clarity Sprint Card */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-md transition-shadow duration-200">
-              <h3 className="text-xl mb-3">AI Clarity Sprint</h3>
-              <p className="text-foreground/70 mb-4">
+            <div className="bg-[#ECF0EE] p-6 rounded-[4px]">
+              <h3 className="text-base mb-3">AI Clarity Sprint</h3>
+              <p className="text-[15px] text-[#3C3C38] mb-4">
                 A structured diagnostic that produces your AI Readiness Snapshot using the SCALE Framework. Scoped after discovery.
               </p>
-              <Link href="/services/ai-clarity-sprint" className="text-teal font-semibold text-sm no-underline hover:text-plum">
+              <Link href="/services/ai-clarity-sprint" className="btn-secondary no-underline">
                 Learn more &rarr;
               </Link>
             </div>
 
             {/* AI Design + Activation Sprint Card */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-md transition-shadow duration-200">
-              <h3 className="text-xl mb-3">AI Design + Activation Sprint</h3>
-              <p className="text-foreground/70 mb-4">
+            <div className="bg-[#ECF0EE] p-6 rounded-[4px]">
+              <h3 className="text-base mb-3">AI Design + Activation Sprint</h3>
+              <p className="text-[15px] text-[#3C3C38] mb-4">
                 A four-week embedded engagement that designs and implements your priority AI initiative. Scoped after discovery.
               </p>
-              <Link href="/services/ai-design-activation-sprint" className="text-teal font-semibold text-sm no-underline hover:text-plum">
+              <Link href="/services/ai-design-activation-sprint" className="btn-secondary no-underline">
                 Learn more &rarr;
               </Link>
             </div>
 
             {/* Embedded AI Advisor Card */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-md transition-shadow duration-200">
-              <h3 className="text-xl mb-3">Embedded AI Advisor</h3>
-              <p className="text-foreground/70 mb-4">
+            <div className="bg-[#ECF0EE] p-6 rounded-[4px]">
+              <h3 className="text-base mb-3">Embedded AI Advisor</h3>
+              <p className="text-[15px] text-[#3C3C38] mb-4">
                 Ongoing fractional Chief AI Strategy Officer support for businesses that need consistent AI leadership. Monthly retainer, scoped after discovery.
               </p>
-              <Link href="/services/embedded-ai-advisor" className="text-teal font-semibold text-sm no-underline hover:text-plum">
+              <Link href="/services/embedded-ai-advisor" className="btn-secondary no-underline">
                 Learn more &rarr;
               </Link>
             </div>
           </div>
           <div className="content-narrow text-center mt-10">
-            <p className="text-foreground/70 mb-2">Not sure where to start?</p>
+            <p className="text-[#7A7A74] mb-2">Not sure where to start?</p>
             <Link href="/discovery-call" className="btn-primary no-underline">
               Book a Discovery Call
             </Link>
-            <p className="text-sm text-muted-foreground mt-3">and we'll figure it out together.</p>
+            <p className="text-sm text-[#7A7A74] mt-3">and we'll figure it out together.</p>
           </div>
         </div>
       </section>
@@ -180,7 +180,7 @@ export default function Home() {
             <img
               src="/manus-storage/erynn-kirshner-headshot_b4910dd2.png"
               alt="Erynn Kirshner, Founder of Tech Love Consulting"
-              className="w-48 h-48 rounded-lg object-cover object-top shrink-0 shadow-md"
+              className="w-48 h-48 rounded-[4px] object-cover object-top shrink-0"
             />
             <div>
               <h2 className="mb-6">You need someone who has actually run a business.</h2>
@@ -191,7 +191,7 @@ export default function Home() {
                 She built TLC on one belief: the best AI strategy is the one your team will actually use.
               </div>
               <div className="mt-8">
-                <Link href="/about" className="text-teal font-semibold no-underline hover:text-plum">
+                <Link href="/about" className="btn-secondary no-underline">
                   Read more about Erynn &rarr;
                 </Link>
               </div>
@@ -203,10 +203,10 @@ export default function Home() {
       <hr className="section-divider" />
 
       {/* Featured Proof Placeholder */}
-      <section className="section-spacing bg-sand">
+      <section className="section-spacing">
         <div className="container content-narrow text-center">
           <p className="chapter-label">Results</p>
-          <p className="text-foreground/60 italic mb-0">
+          <p className="text-[#7A7A74] italic font-serif mb-0">
             Client results and case studies coming soon.
           </p>
         </div>

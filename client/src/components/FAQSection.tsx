@@ -20,17 +20,18 @@ export default function FAQSection({ items, headline }: FAQSectionProps) {
     <section className="section-spacing">
       <div className="container content-narrow">
         {headline && <h2 className="mb-8">{headline}</h2>}
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="single" collapsible className="space-y-0">
           {items.map((item, index) => (
             <AccordionItem
               key={index}
               value={`faq-${index}`}
-              className="border border-border rounded-lg px-6 bg-card"
+              className="border-b border-[#C8CCCA] px-0"
+              style={{ borderBottomWidth: '0.5px' }}
             >
-              <AccordionTrigger className="text-left font-serif text-lg font-semibold text-teal py-5 hover:no-underline">
+              <AccordionTrigger className="text-left font-serif text-[1.05rem] font-normal text-[#1A1A18] py-5 hover:no-underline">
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className="text-foreground/80 pb-5 text-base leading-relaxed">
+              <AccordionContent className="text-[#3C3C38] pb-5 text-[15px] leading-[1.8]">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>

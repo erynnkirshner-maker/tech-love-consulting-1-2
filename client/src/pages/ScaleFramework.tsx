@@ -41,30 +41,28 @@ export default function ScaleFramework() {
       />
 
       {/* Hero */}
-      <section className="section-spacing">
-        <div className="container content-narrow">
-          <p className="chapter-label">The SCALE Framework</p>
-          <h1 className="mb-6">A framework built for how founder-led businesses actually adopt AI.</h1>
-          <p className="text-lg text-foreground/80">
-            Most AI frameworks are built for enterprises. They assume large IT teams, dedicated change management budgets, and months of runway.
-          </p>
-          <p className="text-lg text-foreground/80">
-            The SCALE Framework was built for something different: businesses where the founder is still in the room, where culture is fragile and precious, and where every initiative has to earn its place.
-          </p>
-          <p className="text-lg text-foreground/80">
-            SCALE is TLC's proprietary methodology for human-centered AI adoption. It addresses the five dimensions that determine whether AI creates lasting value or becomes an expensive distraction.
-          </p>
-        </div>
-      </section>
-
-      {/* SCALE Image */}
-      <section className="pb-8">
-        <div className="container">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <img
             src={scaleImage}
-            alt="Five interconnected organic shapes representing the SCALE Framework dimensions"
-            className="w-full max-w-[700px] mx-auto rounded-lg"
+            alt=""
+            className="w-full h-full object-cover opacity-20"
           />
+        </div>
+        <div className="relative z-10 section-spacing">
+          <div className="container content-narrow">
+            <p className="chapter-label">The SCALE Framework</p>
+            <h1 className="mb-6">A framework built for how founder-led businesses actually adopt AI.</h1>
+            <p>
+              Most AI frameworks are built for enterprises. They assume large IT teams, dedicated change management budgets, and months of runway.
+            </p>
+            <p>
+              The SCALE Framework was built for something different: businesses where the founder is still in the room, where culture is fragile and precious, and where every initiative has to earn its place.
+            </p>
+            <p>
+              SCALE is TLC's proprietary methodology for human-centered AI adoption. It addresses the five dimensions that determine whether AI creates lasting value or becomes an expensive distraction.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -76,7 +74,7 @@ export default function ScaleFramework() {
           <section className="section-spacing">
             <div className="container content-narrow">
               <div className="flex items-baseline gap-4 mb-6">
-                <span className="font-serif text-4xl font-bold text-apricot">{dim.letter}</span>
+                <span className="font-sans text-3xl font-700 text-[#2A6E67]">{dim.letter}</span>
                 <h2 className="mb-0">{dim.title}</h2>
               </div>
               {dim.body.split("\n\n").map((paragraph, pIndex) => (

@@ -2,8 +2,6 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import CTASection from "@/components/CTASection";
 
-const aboutImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-about-v2-aK8Xdt2MwZqUMKQtr3xd8q.webp";
-
 const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -34,10 +32,10 @@ export default function About() {
       <section className="section-spacing">
         <div className="container content-narrow">
           <h1 className="mb-6">Technology should serve your team. Not the other way around.</h1>
-          <p className="text-lg text-foreground/80">
+          <p>
             You started your business to build something. Not to become an AI expert. Not to manage a stack of tools your team doesn't trust. Not to explain to a consultant why their recommendation doesn't fit how your company actually operates.
           </p>
-          <p className="text-lg text-foreground/80">
+          <p>
             That tension is exactly why TLC exists.
           </p>
         </div>
@@ -72,7 +70,7 @@ export default function About() {
             <img
               src="/manus-storage/erynn-kirshner-headshot_b4910dd2.png"
               alt="Erynn Kirshner, Founder of Tech Love Consulting"
-              className="w-64 h-80 rounded-lg object-cover object-top shadow-lg"
+              className="w-64 h-80 rounded-[4px] object-cover object-top"
             />
           </div>
         </div>
@@ -86,20 +84,20 @@ export default function About() {
           <p className="chapter-label">Credentials</p>
           <h2 className="mb-8">The background behind the work.</h2>
           <div className="space-y-4">
-            <div className="flex items-start gap-4 p-4 bg-sand rounded-lg">
-              <div className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0"></div>
+            <div className="flex items-start gap-4 p-4 bg-[#ECF0EE] rounded-[4px]">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <p className="mb-0">20 years of operational leadership, including COO and enterprise SaaS roles at companies including PAR Technology</p>
             </div>
-            <div className="flex items-start gap-4 p-4 bg-sand rounded-lg">
-              <div className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0"></div>
+            <div className="flex items-start gap-4 p-4 bg-[#ECF0EE] rounded-[4px]">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <p className="mb-0">UC Berkeley Haas certification in AI Business Strategy and Applications, completed 2024</p>
             </div>
-            <div className="flex items-start gap-4 p-4 bg-sand rounded-lg">
-              <div className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0"></div>
+            <div className="flex items-start gap-4 p-4 bg-[#ECF0EE] rounded-[4px]">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <p className="mb-0">Creator of the SCALE Framework, a proprietary methodology for human-centered AI adoption in founder-led businesses</p>
             </div>
-            <div className="flex items-start gap-4 p-4 bg-sand rounded-lg">
-              <div className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0"></div>
+            <div className="flex items-start gap-4 p-4 bg-[#ECF0EE] rounded-[4px]">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
               <p className="mb-0">Current fractional Chief AI Strategy Officer serving clients across multiple industries</p>
             </div>
           </div>

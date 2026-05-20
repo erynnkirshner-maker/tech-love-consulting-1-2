@@ -11,7 +11,7 @@ export default function NotFound() {
       <section className="section-spacing">
         <div className="container content-narrow text-center">
           <h1 className="mb-4">Page not found.</h1>
-          <p className="text-lg text-foreground/70 mb-8">
+          <p className="text-[#7A7A74] mb-8">
             The page you're looking for doesn't exist or has been moved.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

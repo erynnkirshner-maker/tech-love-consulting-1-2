@@ -4,10 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -41,54 +41,50 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* TLC Brand Colors */
-  --color-teal: oklch(0.35 0.08 195);
-  --color-teal-light: oklch(0.45 0.08 195);
-  --color-plum: oklch(0.45 0.08 320);
-  --color-plum-light: oklch(0.55 0.06 320);
-  --color-apricot: oklch(0.72 0.1 55);
-  --color-apricot-dark: oklch(0.65 0.12 55);
-  --color-sand: oklch(0.92 0.02 80);
-  --color-cream: oklch(0.97 0.01 90);
+  /* TLC Brand Colors — Editorial Minimal */
+  --color-teal: #2A6E67;
+  --color-berry: #7D3B52;
+  --color-surface: #ECF0EE;
+  --color-smoke: #F2F5F4;
 
   --font-sans: "Nunito", system-ui, sans-serif;
   --font-serif: "Lora", Georgia, serif;
 }
 
 :root {
-  --radius: 0.5rem;
-  --background: oklch(0.97 0.01 90);
-  --foreground: oklch(0.25 0.02 50);
-  --card: oklch(0.99 0.005 90);
-  --card-foreground: oklch(0.25 0.02 50);
-  --popover: oklch(0.99 0.005 90);
-  --popover-foreground: oklch(0.25 0.02 50);
-  --primary: oklch(0.35 0.08 195);
-  --primary-foreground: oklch(0.97 0.01 90);
-  --secondary: oklch(0.92 0.02 80);
-  --secondary-foreground: oklch(0.35 0.04 50);
-  --muted: oklch(0.94 0.015 80);
-  --muted-foreground: oklch(0.5 0.02 50);
-  --accent: oklch(0.72 0.1 55);
-  --accent-foreground: oklch(0.25 0.02 50);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.88 0.02 80);
-  --input: oklch(0.88 0.02 80);
-  --ring: oklch(0.35 0.08 195);
-  --chart-1: oklch(0.35 0.08 195);
-  --chart-2: oklch(0.45 0.08 320);
-  --chart-3: oklch(0.72 0.1 55);
-  --chart-4: oklch(0.92 0.02 80);
-  --chart-5: oklch(0.97 0.01 90);
-  --sidebar: oklch(0.97 0.01 90);
-  --sidebar-foreground: oklch(0.25 0.02 50);
-  --sidebar-primary: oklch(0.35 0.08 195);
-  --sidebar-primary-foreground: oklch(0.97 0.01 90);
-  --sidebar-accent: oklch(0.92 0.02 80);
-  --sidebar-accent-foreground: oklch(0.25 0.02 50);
-  --sidebar-border: oklch(0.88 0.02 80);
-  --sidebar-ring: oklch(0.35 0.08 195);
+  --radius: 4px;
+  --background: #F2F5F4;
+  --foreground: #1A1A18;
+  --card: #ECF0EE;
+  --card-foreground: #1A1A18;
+  --popover: #ECF0EE;
+  --popover-foreground: #1A1A18;
+  --primary: #2A6E67;
+  --primary-foreground: #FFFFFF;
+  --secondary: #ECF0EE;
+  --secondary-foreground: #1A1A18;
+  --muted: #ECF0EE;
+  --muted-foreground: #7A7A74;
+  --accent: #7D3B52;
+  --accent-foreground: #FFFFFF;
+  --destructive: #b91c1c;
+  --destructive-foreground: #FFFFFF;
+  --border: #C8CCCA;
+  --input: #C8CCCA;
+  --ring: #2A6E67;
+  --chart-1: #2A6E67;
+  --chart-2: #7D3B52;
+  --chart-3: #7A7A74;
+  --chart-4: #C8CCCA;
+  --chart-5: #ECF0EE;
+  --sidebar: #F2F5F4;
+  --sidebar-foreground: #1A1A18;
+  --sidebar-primary: #2A6E67;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #ECF0EE;
+  --sidebar-accent-foreground: #1A1A18;
+  --sidebar-border: #C8CCCA;
+  --sidebar-ring: #2A6E67;
 }
 
 @layer base {
@@ -96,39 +92,46 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-sans;
-    font-size: 18px;
-    line-height: 1.75;
+    @apply bg-background text-foreground;
+    font-family: var(--font-serif);
+    font-size: 16px;
+    line-height: 1.8;
+    color: #3C3C38;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-    color: oklch(0.35 0.08 195);
-  }
   h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 700;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: clamp(2.375rem, 4vw, 2.75rem);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: #1A1A18;
   }
   h2 {
-    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
-    font-weight: 600;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: clamp(1.375rem, 2.5vw, 1.625rem);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: #2A6E67;
   }
   h3 {
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-    font-weight: 600;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    line-height: 1.4;
+    color: #2A6E67;
   }
   p {
     margin-bottom: 1.25rem;
   }
   a {
-    color: oklch(0.35 0.08 195);
+    color: #2A6E67;
     transition: color 200ms ease;
   }
   a:hover {
-    color: oklch(0.45 0.08 320);
+    color: #1A1A18;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -159,116 +162,128 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
       max-width: 960px;
     }
   }
 
-  /* Narrow content column for intimate reading */
+  /* Narrow content column — 640px max for editorial reading */
   .content-narrow {
-    max-width: 680px;
+    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* Section spacing */
+  /* Section spacing — minimum 56px top/bottom */
   .section-spacing {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   @media (min-width: 768px) {
     .section-spacing {
-      padding-top: 7rem;
-      padding-bottom: 7rem;
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
     }
   }
 
-  /* Conversation marker - key statements in Erynn's voice */
+  /* Pull quote / conversation marker — berry left border */
   .conversation-marker {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: clamp(1.19rem, 2vw, 1.375rem);
     line-height: 1.6;
     padding-left: 1.5rem;
-    border-left: 2px solid oklch(0.72 0.1 55);
+    border-left: 2px solid #7D3B52;
     margin: 2rem 0;
-    color: oklch(0.35 0.04 50);
+    color: #1A1A18;
   }
 
-  /* Section divider */
+  /* Section divider — 0.5px horizontal rule */
   .section-divider {
-    height: 1px;
-    background: oklch(0.45 0.08 320 / 0.2);
+    height: 0.5px;
+    background: #C8CCCA;
     border: none;
     margin: 0;
   }
 
-  /* Chapter label */
+  /* Chapter / eyebrow label */
   .chapter-label {
     font-family: var(--font-sans);
-    font-weight: 600;
-    font-size: 0.75rem;
-    letter-spacing: 0.08em;
+    font-weight: 700;
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: oklch(0.5 0.04 50);
+    color: #7A7A74;
     margin-bottom: 1rem;
   }
 
-  /* Primary CTA button */
+  /* Primary CTA button — filled teal */
   .btn-primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.875rem 2rem;
-    background: oklch(0.72 0.1 55);
-    color: oklch(0.25 0.02 50);
+    padding: 0.75rem 1.75rem;
+    background: #2A6E67;
+    color: #FFFFFF;
     font-family: var(--font-sans);
-    font-weight: 600;
-    font-size: 1rem;
-    border-radius: 0.375rem;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 4px;
     transition: all 160ms cubic-bezier(0.23, 1, 0.32, 1);
     text-decoration: none;
     border: none;
   }
   .btn-primary:hover {
-    background: oklch(0.65 0.12 55);
-    color: oklch(0.2 0.02 50);
-    transform: translateY(-1px);
+    background: #1F5650;
+    color: #FFFFFF;
   }
   .btn-primary:active {
     transform: scale(0.97);
   }
 
-  /* Secondary CTA */
+  /* Secondary CTA — text link style with teal underline */
   .btn-secondary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.875rem 2rem;
+    padding: 0;
     background: transparent;
-    color: oklch(0.35 0.08 195);
+    color: #2A6E67;
     font-family: var(--font-sans);
-    font-weight: 600;
-    font-size: 1rem;
-    border-radius: 0.375rem;
-    border: 1.5px solid oklch(0.35 0.08 195);
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 1.5px solid #2A6E67;
+    border-radius: 0;
     transition: all 160ms cubic-bezier(0.23, 1, 0.32, 1);
     text-decoration: none;
+    padding-bottom: 2px;
   }
   .btn-secondary:hover {
-    background: oklch(0.35 0.08 195);
-    color: oklch(0.97 0.01 90);
+    color: #1A1A18;
+    border-bottom-color: #1A1A18;
   }
   .btn-secondary:active {
     transform: scale(0.97);
+  }
+
+  /* Callout block — surface color background */
+  .callout-block {
+    background: #ECF0EE;
+    padding: 2rem;
+    border-radius: 4px;
   }
 }

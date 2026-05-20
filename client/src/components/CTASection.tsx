@@ -14,10 +14,10 @@ export default function CTASection({
   buttonHref = "/discovery-call",
 }: CTASectionProps) {
   return (
-    <section className="section-spacing bg-sand">
+    <section className="section-spacing">
       <div className="container content-narrow text-center">
         <h2 className="mb-6">{headline}</h2>
-        {body && <p className="text-lg text-muted-foreground mb-8">{body}</p>}
+        {body && <p className="text-[#7A7A74] mb-8">{body}</p>}
         <Link href={buttonHref} className="btn-primary no-underline">
           {buttonText}
         </Link>

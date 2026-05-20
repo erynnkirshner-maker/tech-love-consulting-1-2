@@ -9,17 +9,9 @@ import { useState, useEffect } from "react";
  * 3. Get your Measurement ID (format: G-XXXXXXXXXX)
  * 4. Replace 'G-XXXXXXXXXX' in the loadGoogleAnalytics function below
  * 5. Analytics will only load AFTER the user clicks "Accept"
- * 
- * Google Search Console Verification:
- * 1. Go to https://search.google.com/search-console
- * 2. Add property: techlove.consulting
- * 3. Choose "HTML tag" verification method
- * 4. Add the meta tag to client/index.html <head> section
- * 5. Verify ownership
  */
 
 function loadGoogleAnalytics() {
-  // Replace G-XXXXXXXXXX with your actual GA4 Measurement ID
   const GA_ID = "G-XXXXXXXXXX";
   
   if (document.querySelector(`script[src*="googletagmanager"]`)) return;
@@ -47,7 +39,6 @@ export default function CookieBanner() {
     if (!consent) {
       setVisible(true);
     } else if (consent === "accepted") {
-      // Load analytics if previously accepted
       loadGoogleAnalytics();
     }
   }, []);
@@ -66,23 +57,23 @@ export default function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-card border-t border-border shadow-lg p-4 md:p-6">
+    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-[#F2F5F4] border-t border-[#C8CCCA] p-4 md:p-6" style={{ borderTopWidth: '0.5px' }}>
       <div className="container flex flex-col md:flex-row items-start md:items-center justify-between gap-4 max-w-[960px]">
-        <p className="text-sm text-foreground/80 mb-0">
+        <p className="text-[13px] text-[#3C3C38] mb-0 leading-relaxed">
           This website uses cookies to analyze traffic and improve your experience. 
           By clicking "Accept," you consent to our use of analytics cookies. 
-          See our <a href="/privacy-policy" className="underline text-teal">Privacy Policy</a> for details.
+          See our <a href="/privacy-policy" className="text-[#2A6E67] border-b border-[#2A6E67] pb-[1px] no-underline">Privacy Policy</a> for details.
         </p>
         <div className="flex gap-3 shrink-0">
           <button
             onClick={handleDecline}
-            className="px-4 py-2 text-sm font-semibold text-foreground/70 border border-border rounded-md hover:bg-sand transition-colors"
+            className="px-4 py-2 font-sans text-[0.75rem] font-700 uppercase tracking-[0.08em] text-[#7A7A74] border border-[#C8CCCA] rounded-[4px] hover:text-[#1A1A18] transition-colors"
           >
             Decline
           </button>
           <button
             onClick={handleAccept}
-            className="px-4 py-2 text-sm font-semibold bg-teal text-cream rounded-md hover:bg-teal-light transition-colors"
+            className="px-4 py-2 font-sans text-[0.75rem] font-700 uppercase tracking-[0.08em] text-white bg-[#2A6E67] rounded-[4px] hover:bg-[#1F5550] transition-colors"
           >
             Accept
           </button>
