@@ -3,9 +3,9 @@ import SEO from "@/components/SEO";
 import CTASection from "@/components/CTASection";
 
 // Home hero: keep the soft teal flowing wave — this one stays
-const heroImage = "/manus-storage/tlc-hero-home-v2_9d365adc.png";
+const heroImage = "/tlc-hero-home-v2.png";
 // Erynn's headshot
-const headshotUrl = "/manus-storage/erynn-kirshner-headshot_6d012c51.png";
+const headshotUrl = "/erynn-kirshner-headshot.png";
 
 const schema = {
   "@context": "https://schema.org",
