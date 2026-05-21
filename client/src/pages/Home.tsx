@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 // Home hero: keep the soft teal flowing wave — this one stays
 const heroImage = "/tlc-hero-home-v2.png";
 // Erynn's headshot
-const headshotUrl = "/erynn-kirshner-headshot.png";
+const headshotUrl = "/erynn-kirshner-headshot.jpg";
 
 const schema = {
   "@context": "https://schema.org",

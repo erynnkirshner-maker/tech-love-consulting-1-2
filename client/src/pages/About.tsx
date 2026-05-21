@@ -3,7 +3,7 @@ import SEO from "@/components/SEO";
 import CTASection from "@/components/CTASection";
 
 // Erynn's headshot
-const headshotUrl = "/erynn-kirshner-headshot.png";
+const headshotUrl = "/erynn-kirshner-headshot.jpg";
 
 const schema = {
   "@context": "https://schema.org",
