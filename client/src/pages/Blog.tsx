@@ -27,17 +27,23 @@ export default function Blog() {
           <p className="text-[#7A7A74] italic font-serif mb-8">
             Blog posts are coming soon. In the meantime, explore the resources below.
           </p>
-          <div className="space-y-4">
-            <Link href="/scale-framework" className="block btn-secondary no-underline inline-block">
-              Read about the SCALE Framework &rarr;
-            </Link>
-            <Link href="/services" className="block btn-secondary no-underline inline-block">
-              Explore our services &rarr;
-            </Link>
-            <Link href="/discovery-call" className="block btn-secondary no-underline inline-block">
-              Book a Discovery Call &rarr;
-            </Link>
-          </div>
+          <ul className="space-y-4 list-none pl-0 text-left max-w-xs mx-auto">
+            <li>
+              <Link href="/scale-framework" className="btn-secondary no-underline">
+                Read about the SCALE Framework &rarr;
+              </Link>
+            </li>
+            <li>
+              <Link href="/services" className="btn-secondary no-underline">
+                Explore our services &rarr;
+              </Link>
+            </li>
+            <li>
+              <Link href="/discovery-call" className="btn-secondary no-underline">
+                Book a Discovery Call &rarr;
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
     </>
