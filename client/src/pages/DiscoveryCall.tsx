@@ -1,4 +1,3 @@
-import { useState } from "react";
 import SEO from "@/components/SEO";
 import FAQSection from "@/components/FAQSection";
 
@@ -23,13 +22,8 @@ const faqs = [
 ];
 
 export default function DiscoveryCall() {
-  const [formData, setFormData] = useState({ name: "", email: "", company: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+  // Check if Netlify redirected back with ?submitted=true after form submission
+  const submitted = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('submitted') === 'true';
 
   return (
     <>
@@ -123,13 +117,15 @@ export default function DiscoveryCall() {
               </div>
             ) : (
               <form
-                onSubmit={handleSubmit}
                 name="discovery-call"
                 method="POST"
+                action="/discovery-call?submitted=true"
                 data-netlify="true"
+                netlify-honeypot="bot-field"
                 className="space-y-5"
               >
                 <input type="hidden" name="form-name" value="discovery-call" />
+                <input type="hidden" name="bot-field" />
                 <div>
                   <label htmlFor="name" className="block font-sans font-700 uppercase tracking-[0.12em] mb-2" style={{ fontSize: '0.6875rem', color: '#7A7A74' }}>Name</label>
                   <input

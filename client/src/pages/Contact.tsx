@@ -1,15 +1,9 @@
-import { useState } from "react";
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+  // Check if Netlify redirected back with ?submitted=true after form submission
+  const submitted = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('submitted') === 'true';
 
   return (
     <>
@@ -52,13 +46,15 @@ export default function Contact() {
               </div>
             ) : (
               <form
-                onSubmit={handleSubmit}
                 name="contact"
                 method="POST"
+                action="/contact?submitted=true"
                 data-netlify="true"
+                netlify-honeypot="bot-field"
                 className="space-y-5"
               >
                 <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="bot-field" />
                 <div>
                   <label htmlFor="contact-name" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Name</label>
                   <input
@@ -66,8 +62,6 @@ export default function Contact() {
                     id="contact-name"
                     name="name"
                     required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors"
                   />
                 </div>
@@ -78,8 +72,6 @@ export default function Contact() {
                     id="contact-email"
                     name="email"
                     required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors"
                   />
                 </div>
@@ -90,8 +82,6 @@ export default function Contact() {
                     name="message"
                     rows={5}
                     required
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors resize-none"
                   />
                 </div>
