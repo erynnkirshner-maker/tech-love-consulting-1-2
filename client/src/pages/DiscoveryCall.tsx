@@ -133,8 +133,6 @@ export default function DiscoveryCall() {
                     id="name"
                     name="name"
                     required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-0 py-3 bg-transparent focus:outline-none transition-colors"
                     style={{ borderBottom: '1px solid #C8CCCA', color: '#1A1A18' }}
                     onFocus={(e) => e.target.style.borderBottomColor = '#2A6E67'}
@@ -148,8 +146,6 @@ export default function DiscoveryCall() {
                     id="email"
                     name="email"
                     required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-0 py-3 bg-transparent focus:outline-none transition-colors"
                     style={{ borderBottom: '1px solid #C8CCCA', color: '#1A1A18' }}
                     onFocus={(e) => e.target.style.borderBottomColor = '#2A6E67'}
@@ -162,8 +158,6 @@ export default function DiscoveryCall() {
                     type="text"
                     id="company"
                     name="company"
-                    value={formData.company}
-                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                     className="w-full px-0 py-3 bg-transparent focus:outline-none transition-colors"
                     style={{ borderBottom: '1px solid #C8CCCA', color: '#1A1A18' }}
                     onFocus={(e) => e.target.style.borderBottomColor = '#2A6E67'}
@@ -176,8 +170,6 @@ export default function DiscoveryCall() {
                     id="message"
                     name="message"
                     rows={4}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-0 py-3 bg-transparent focus:outline-none transition-colors resize-none"
                     style={{ borderBottom: '1px solid #C8CCCA', color: '#1A1A18' }}
                     onFocus={(e) => e.target.style.borderBottomColor = '#2A6E67'}
