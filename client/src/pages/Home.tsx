@@ -2,7 +2,10 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import CTASection from "@/components/CTASection";
 
+// Home hero: keep the soft teal flowing wave — this one stays
 const heroImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-hero-home-v2-nZMRDckP5bGW8qTPX4GwZu.webp";
+// Erynn's headshot
+const headshotUrl = "/manus-storage/erynn-headshot_dbb54752.png";
 
 const schema = {
   "@context": "https://schema.org",
@@ -32,12 +35,13 @@ export default function Home() {
         schema={schema}
       />
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      {/* Hero Section — keep the soft teal flowing wave */}
+      <section className="relative overflow-hidden" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="absolute inset-0 z-0">
           <img
             src={heroImage}
             alt=""
+            aria-hidden="true"
             className="w-full h-full object-cover opacity-25"
           />
         </div>
@@ -47,7 +51,7 @@ export default function Home() {
             <h1 className="mb-6">
               You know AI matters. You're not sure what to do next.
             </h1>
-            <p className="text-[15px] leading-[1.8] text-[#3C3C38] mb-8 max-w-[600px]">
+            <p className="mb-8 max-w-[580px]">
               That's a smart place to pause. Founders who rush into AI tools end up with expensive experiments and exhausted teams. TLC helps you build a strategy that actually works, for your business and your people.
             </p>
             <Link href="/discovery-call" className="btn-primary no-underline">
@@ -60,7 +64,7 @@ export default function Home() {
       <hr className="section-divider" />
 
       {/* Problem Block */}
-      <section className="section-spacing">
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow">
           <h2 className="mb-6">The pressure is real. So is the risk of getting it wrong.</h2>
           <p>
@@ -81,7 +85,7 @@ export default function Home() {
       <hr className="section-divider" />
 
       {/* Solution Overview */}
-      <section className="section-spacing">
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow">
           <h2 className="mb-6">Practical AI strategy built for how your business actually runs.</h2>
           <p>
@@ -99,7 +103,7 @@ export default function Home() {
       <hr className="section-divider" />
 
       {/* Social Proof Strip */}
-      <section className="py-10">
+      <section className="py-10" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow text-center">
           <p className="font-serif italic text-[1.19rem] text-[#1A1A18] mb-0">
             Trusted by founder-led businesses navigating AI adoption without the chaos.
@@ -110,17 +114,16 @@ export default function Home() {
       <hr className="section-divider" />
 
       {/* Services Preview */}
-      <section className="section-spacing">
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container">
           <div className="content-narrow mb-12">
             <h2 className="mb-3">Find your entry point.</h2>
-            <p className="text-[15px] text-[#7A7A74]">Every engagement starts with a conversation. Here's where most clients begin.</p>
+            <p style={{ color: '#7A7A74' }}>Every engagement starts with a conversation. Here's where most clients begin.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[700px] mx-auto">
-            {/* AI Fit Check Card */}
-            <div className="bg-[#ECF0EE] p-6 rounded-[4px]">
+            <div style={{ backgroundColor: '#ECF0EE', padding: '1.5rem', borderRadius: '4px' }}>
               <h3 className="text-base mb-3">AI Fit Check</h3>
-              <p className="text-[15px] text-[#3C3C38] mb-4">
+              <p className="mb-4" style={{ fontSize: '15px' }}>
                 A 60-minute session that surfaces your highest-leverage AI opportunity and gives you a clear next step. Starting at $750.
               </p>
               <Link href="/services/ai-fit-check" className="btn-secondary no-underline">
@@ -128,10 +131,9 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* AI Clarity Sprint Card */}
-            <div className="bg-[#ECF0EE] p-6 rounded-[4px]">
+            <div style={{ backgroundColor: '#ECF0EE', padding: '1.5rem', borderRadius: '4px' }}>
               <h3 className="text-base mb-3">AI Clarity Sprint</h3>
-              <p className="text-[15px] text-[#3C3C38] mb-4">
+              <p className="mb-4" style={{ fontSize: '15px' }}>
                 A structured diagnostic that produces your AI Readiness Snapshot using the SCALE Framework. Scoped after discovery.
               </p>
               <Link href="/services/ai-clarity-sprint" className="btn-secondary no-underline">
@@ -139,10 +141,9 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* AI Design + Activation Sprint Card */}
-            <div className="bg-[#ECF0EE] p-6 rounded-[4px]">
+            <div style={{ backgroundColor: '#ECF0EE', padding: '1.5rem', borderRadius: '4px' }}>
               <h3 className="text-base mb-3">AI Design + Activation Sprint</h3>
-              <p className="text-[15px] text-[#3C3C38] mb-4">
+              <p className="mb-4" style={{ fontSize: '15px' }}>
                 A four-week embedded engagement that designs and implements your priority AI initiative. Scoped after discovery.
               </p>
               <Link href="/services/ai-design-activation-sprint" className="btn-secondary no-underline">
@@ -150,10 +151,9 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Embedded AI Advisor Card */}
-            <div className="bg-[#ECF0EE] p-6 rounded-[4px]">
+            <div style={{ backgroundColor: '#ECF0EE', padding: '1.5rem', borderRadius: '4px' }}>
               <h3 className="text-base mb-3">Embedded AI Advisor</h3>
-              <p className="text-[15px] text-[#3C3C38] mb-4">
+              <p className="mb-4" style={{ fontSize: '15px' }}>
                 Ongoing fractional Chief AI Strategy Officer support for businesses that need consistent AI leadership. Monthly retainer, scoped after discovery.
               </p>
               <Link href="/services/embedded-ai-advisor" className="btn-secondary no-underline">
@@ -162,25 +162,26 @@ export default function Home() {
             </div>
           </div>
           <div className="content-narrow text-center mt-10">
-            <p className="text-[#7A7A74] mb-2">Not sure where to start?</p>
+            <p style={{ color: '#7A7A74' }} className="mb-2">Not sure where to start?</p>
             <Link href="/discovery-call" className="btn-primary no-underline">
               Book a Discovery Call
             </Link>
-            <p className="text-sm text-[#7A7A74] mt-3">and we'll figure it out together.</p>
+            <p className="text-sm mt-3" style={{ color: '#7A7A74' }}>and we'll figure it out together.</p>
           </div>
         </div>
       </section>
 
       <hr className="section-divider" />
 
-      {/* Authority Block */}
-      <section className="section-spacing">
+      {/* Authority Block — headshot + bio */}
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow">
           <div className="flex flex-col md:flex-row items-start gap-8">
             <img
-              src="/manus-storage/erynn-kirshner-headshot_b4910dd2.png"
+              src={headshotUrl}
               alt="Erynn Kirshner, Founder of Tech Love Consulting"
-              className="w-48 h-48 rounded-[4px] object-cover object-top shrink-0"
+              className="w-44 h-56 object-cover object-top shrink-0"
+              style={{ borderRadius: '4px' }}
             />
             <div>
               <h2 className="mb-6">You need someone who has actually run a business.</h2>
@@ -203,10 +204,10 @@ export default function Home() {
       <hr className="section-divider" />
 
       {/* Featured Proof Placeholder */}
-      <section className="section-spacing">
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow text-center">
           <p className="chapter-label">Results</p>
-          <p className="text-[#7A7A74] italic font-serif mb-0">
+          <p className="font-serif italic mb-0" style={{ color: '#7A7A74' }}>
             Client results and case studies coming soon.
           </p>
         </div>

@@ -2,8 +2,6 @@ import { useState } from "react";
 import SEO from "@/components/SEO";
 import FAQSection from "@/components/FAQSection";
 
-const discoveryImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-discovery-v2-dg69z76rxXfM3zEDrU6ozs.webp";
-
 const schema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -41,27 +39,18 @@ export default function DiscoveryCall() {
         schema={schema}
       />
 
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src={discoveryImage}
-            alt=""
-            className="w-full h-full object-cover opacity-20"
-          />
-        </div>
-        <div className="relative z-10 section-spacing">
-          <div className="container content-narrow">
-            <h1 className="mb-4">Let's figure out where you are and what's possible.</h1>
-            <p className="text-[#7A7A74]">The Discovery Call is a real conversation. Not a pitch.</p>
-          </div>
+      {/* Hero — clean whitespace, no decorative graphic */}
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
+        <div className="container content-narrow">
+          <h1 className="mb-4">Let's figure out where you are and what's possible.</h1>
+          <p style={{ color: '#7A7A74' }}>The Discovery Call is a real conversation. Not a pitch.</p>
         </div>
       </section>
 
       <hr className="section-divider" />
 
       {/* What to Expect */}
-      <section className="section-spacing">
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow">
           <h2 className="mb-6">What happens on the call.</h2>
           <p>
@@ -79,24 +68,24 @@ export default function DiscoveryCall() {
       <hr className="section-divider" />
 
       {/* What You Get */}
-      <section className="section-spacing">
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow">
           <h2 className="mb-8">What you get.</h2>
           <ul className="space-y-4 list-none pl-0">
             <li className="flex items-start gap-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full mt-2.5 shrink-0" style={{ backgroundColor: '#2A6E67' }}></div>
               <span>30 to 45 minutes with Erynn Kirshner</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full mt-2.5 shrink-0" style={{ backgroundColor: '#2A6E67' }}></div>
               <span>A candid assessment of your current AI readiness</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full mt-2.5 shrink-0" style={{ backgroundColor: '#2A6E67' }}></div>
               <span>A recommendation for your highest-leverage starting point</span>
             </li>
             <li className="flex items-start gap-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#2A6E67] mt-2.5 shrink-0"></div>
+              <div className="w-1.5 h-1.5 rounded-full mt-2.5 shrink-0" style={{ backgroundColor: '#2A6E67' }}></div>
               <span>No pressure. No pitch. Just clarity.</span>
             </li>
           </ul>
@@ -106,7 +95,7 @@ export default function DiscoveryCall() {
       <hr className="section-divider" />
 
       {/* Who This Is For */}
-      <section className="section-spacing">
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow">
           <h2 className="mb-6">Who should book a call.</h2>
           <p>
@@ -118,17 +107,17 @@ export default function DiscoveryCall() {
       <hr className="section-divider" />
 
       {/* Booking Form */}
-      <section className="section-spacing">
+      <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow">
           <div className="max-w-[480px] mx-auto">
             <h2 className="mb-4">Book Your Discovery Call</h2>
-            <p className="text-[#7A7A74] mb-8">
+            <p className="mb-8" style={{ color: '#7A7A74' }}>
               Fill out the form below and Erynn will reach out to schedule your call.
             </p>
             {submitted ? (
-              <div className="bg-[#ECF0EE] rounded-[4px] p-8 text-center">
-                <h3 className="text-base mb-3 text-[#2A6E67]">Thank you!</h3>
-                <p className="text-[#3C3C38] mb-0">
+              <div className="p-8 text-center" style={{ backgroundColor: '#ECF0EE', borderRadius: '4px' }}>
+                <h3 className="text-base mb-3" style={{ color: '#2A6E67' }}>Thank you!</h3>
+                <p className="mb-0" style={{ color: '#3C3C38' }}>
                   Your request has been received. Erynn will be in touch within one business day to schedule your Discovery Call.
                 </p>
               </div>
@@ -142,7 +131,7 @@ export default function DiscoveryCall() {
               >
                 <input type="hidden" name="form-name" value="discovery-call" />
                 <div>
-                  <label htmlFor="name" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Name</label>
+                  <label htmlFor="name" className="block font-sans font-700 uppercase tracking-[0.12em] mb-2" style={{ fontSize: '0.6875rem', color: '#7A7A74' }}>Name</label>
                   <input
                     type="text"
                     id="name"
@@ -150,11 +139,14 @@ export default function DiscoveryCall() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors"
+                    className="w-full px-0 py-3 bg-transparent focus:outline-none transition-colors"
+                    style={{ borderBottom: '1px solid #C8CCCA', color: '#1A1A18' }}
+                    onFocus={(e) => e.target.style.borderBottomColor = '#2A6E67'}
+                    onBlur={(e) => e.target.style.borderBottomColor = '#C8CCCA'}
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Email</label>
+                  <label htmlFor="email" className="block font-sans font-700 uppercase tracking-[0.12em] mb-2" style={{ fontSize: '0.6875rem', color: '#7A7A74' }}>Email</label>
                   <input
                     type="email"
                     id="email"
@@ -162,29 +154,38 @@ export default function DiscoveryCall() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors"
+                    className="w-full px-0 py-3 bg-transparent focus:outline-none transition-colors"
+                    style={{ borderBottom: '1px solid #C8CCCA', color: '#1A1A18' }}
+                    onFocus={(e) => e.target.style.borderBottomColor = '#2A6E67'}
+                    onBlur={(e) => e.target.style.borderBottomColor = '#C8CCCA'}
                   />
                 </div>
                 <div>
-                  <label htmlFor="company" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Company</label>
+                  <label htmlFor="company" className="block font-sans font-700 uppercase tracking-[0.12em] mb-2" style={{ fontSize: '0.6875rem', color: '#7A7A74' }}>Company</label>
                   <input
                     type="text"
                     id="company"
                     name="company"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors"
+                    className="w-full px-0 py-3 bg-transparent focus:outline-none transition-colors"
+                    style={{ borderBottom: '1px solid #C8CCCA', color: '#1A1A18' }}
+                    onFocus={(e) => e.target.style.borderBottomColor = '#2A6E67'}
+                    onBlur={(e) => e.target.style.borderBottomColor = '#C8CCCA'}
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Tell me briefly about your business and what prompted this call.</label>
+                  <label htmlFor="message" className="block font-sans font-700 uppercase tracking-[0.12em] mb-2" style={{ fontSize: '0.6875rem', color: '#7A7A74' }}>Tell me briefly about your business and what prompted this call.</label>
                   <textarea
                     id="message"
                     name="message"
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors resize-none"
+                    className="w-full px-0 py-3 bg-transparent focus:outline-none transition-colors resize-none"
+                    style={{ borderBottom: '1px solid #C8CCCA', color: '#1A1A18' }}
+                    onFocus={(e) => e.target.style.borderBottomColor = '#2A6E67'}
+                    onBlur={(e) => e.target.style.borderBottomColor = '#C8CCCA'}
                   />
                 </div>
                 <button type="submit" className="btn-primary w-full">
