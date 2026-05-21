@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Linkedin } from "lucide-react";
 
 const navLinks = [
   { href: "/about", label: "About" },
@@ -116,6 +116,15 @@ function Footer() {
               <Link href="/contact" className="block text-sm text-[#7A7A74] hover:text-[#2A6E67] no-underline font-serif">Contact</Link>
               <Link href="/scale-framework" className="block text-sm text-[#7A7A74] hover:text-[#2A6E67] no-underline font-serif">SCALE Framework</Link>
               <Link href="/blog" className="block text-sm text-[#7A7A74] hover:text-[#2A6E67] no-underline font-serif">Blog</Link>
+              <a
+                href="https://www.linkedin.com/in/erynnkirshner"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-[#7A7A74] hover:text-[#2A6E67] no-underline font-serif transition-colors"
+              >
+                <Linkedin size={14} />
+                LinkedIn
+              </a>
             </nav>
           </div>
         </div>
