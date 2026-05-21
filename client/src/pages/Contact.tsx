@@ -2,9 +2,6 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 
 export default function Contact() {
-  // Check if Netlify redirected back with ?submitted=true after form submission
-  const submitted = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('submitted') === 'true';
-
   return (
     <>
       <SEO
@@ -37,7 +34,7 @@ export default function Contact() {
       <section className="section-spacing">
         <div className="container content-narrow">
           <div className="max-w-[480px] mx-auto">
-            {submitted ? (
+            {false ? (
               <div className="bg-[#ECF0EE] rounded-[4px] p-8 text-center">
                 <h3 className="text-base mb-3 text-[#2A6E67]">Message sent.</h3>
                 <p className="text-[#3C3C38] mb-0">
@@ -48,7 +45,7 @@ export default function Contact() {
               <form
                 name="contact"
                 method="POST"
-                action="/contact?submitted=true"
+                action="/thank-you"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 className="space-y-5"

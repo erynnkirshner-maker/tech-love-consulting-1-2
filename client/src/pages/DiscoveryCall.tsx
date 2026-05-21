@@ -22,8 +22,6 @@ const faqs = [
 ];
 
 export default function DiscoveryCall() {
-  // Check if Netlify redirected back with ?submitted=true after form submission
-  const submitted = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('submitted') === 'true';
 
   return (
     <>
@@ -108,7 +106,7 @@ export default function DiscoveryCall() {
             <p className="mb-8" style={{ color: '#7A7A74' }}>
               Fill out the form below and Erynn will reach out to schedule your call.
             </p>
-            {submitted ? (
+            {false ? (
               <div className="p-8 text-center" style={{ backgroundColor: '#ECF0EE', borderRadius: '4px' }}>
                 <h3 className="text-base mb-3" style={{ color: '#2A6E67' }}>Thank you!</h3>
                 <p className="mb-0" style={{ color: '#3C3C38' }}>
@@ -119,7 +117,7 @@ export default function DiscoveryCall() {
               <form
                 name="discovery-call"
                 method="POST"
-                action="/discovery-call?submitted=true"
+                action="/thank-you"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 className="space-y-5"
