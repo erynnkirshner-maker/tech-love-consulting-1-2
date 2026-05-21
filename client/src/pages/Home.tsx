@@ -3,9 +3,9 @@ import SEO from "@/components/SEO";
 import CTASection from "@/components/CTASection";
 
 // Home hero: keep the soft teal flowing wave — this one stays
-const heroImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663409776713/3KuvCeY4XyBCWKjDVw6mdN/tlc-hero-home-v2-nZMRDckP5bGW8qTPX4GwZu.webp";
+const heroImage = "/manus-storage/tlc-hero-home-v2_9d365adc.png";
 // Erynn's headshot
-const headshotUrl = "/manus-storage/erynn-headshot_dbb54752.png";
+const headshotUrl = "/manus-storage/erynn-kirshner-headshot_6d012c51.png";
 
 const schema = {
   "@context": "https://schema.org",
