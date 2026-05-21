@@ -18,7 +18,7 @@ function Header() {
     <header className="sticky top-0 z-50 bg-[#F2F5F4]/95 backdrop-blur-sm border-b border-[#C8CCCA]" style={{ borderBottomWidth: '0.5px' }}>
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-2 no-underline">
-          <span className="font-sans text-lg font-700 text-[#2A6E67] tracking-tight">
+          <span className="font-sans text-lg font-black text-[#2A6E67] tracking-tight" style={{ fontWeight: 900 }}>
             Tech Love Consulting
           </span>
         </Link>
