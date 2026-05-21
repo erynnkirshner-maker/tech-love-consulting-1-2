@@ -203,7 +203,7 @@ export default function Home() {
 
       <hr className="section-divider" />
 
-      {/* Featured Proof Placeholder */}
+      {/* Featured Proof — hidden until client results are ready
       <section className="section-spacing" style={{ backgroundColor: '#F2F5F4' }}>
         <div className="container content-narrow text-center">
           <p className="chapter-label">Results</p>
@@ -214,6 +214,7 @@ export default function Home() {
       </section>
 
       <hr className="section-divider" />
+      */}
 
       {/* Final CTA */}
       <CTASection
