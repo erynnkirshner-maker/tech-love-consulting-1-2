@@ -73,6 +73,15 @@ export default function Contact() {
                   />
                 </div>
                 <div>
+                  <label htmlFor="contact-company" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Company</label>
+                  <input
+                    type="text"
+                    id="contact-company"
+                    name="company"
+                    className="w-full px-4 py-3 border-b border-[#C8CCCA] bg-transparent text-[#1A1A18] focus:border-[#2A6E67] focus:outline-none transition-colors"
+                  />
+                </div>
+                <div>
                   <label htmlFor="contact-message" className="block font-sans text-[0.6875rem] font-700 uppercase tracking-[0.12em] text-[#7A7A74] mb-2">Message</label>
                   <textarea
                     id="contact-message"
