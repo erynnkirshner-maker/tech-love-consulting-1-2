@@ -163,10 +163,10 @@ export default function DiscoveryCall() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block font-sans font-700 uppercase tracking-[0.12em] mb-2" style={{ fontSize: '0.6875rem', color: '#7A7A74' }}>Tell me briefly about your business and what prompted this call.</label>
+                  <label htmlFor="comments" className="block font-sans font-700 uppercase tracking-[0.12em] mb-2" style={{ fontSize: '0.6875rem', color: '#7A7A74' }}>Tell me briefly about your business and what prompted this call.</label>
                   <textarea
-                    id="message"
-                    name="message"
+                    id="comments"
+                    name="comments"
                     rows={4}
                     className="w-full px-0 py-3 bg-transparent focus:outline-none transition-colors resize-none"
                     style={{ borderBottom: '1px solid #C8CCCA', color: '#1A1A18' }}
